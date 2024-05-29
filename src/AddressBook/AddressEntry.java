@@ -8,7 +8,7 @@ public class AddressEntry {
     private String city;
     private String state;
     private int zipCode;
-    private String phone;
+    private String phoneNumber;
     private String email;
 
     // Constructor sin parametros
@@ -18,14 +18,14 @@ public class AddressEntry {
 
     // Constructor con todos los parametros
     public AddressEntry(String fisrtName, String lastName, String street, String city, String state, int zipCode,
-            String phone, String email) {
+            String phoneNumber, String email) {
         this.fisrtName = fisrtName;
         this.lastName = lastName;
         this.street = street;
         this.city = city;
         this.state = state;
         this.zipCode = zipCode;
-        this.phone = phone;
+        this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
@@ -33,7 +33,7 @@ public class AddressEntry {
     @Override
     public String toString() {
         return "\nFisrt Name: " + fisrtName + "\nLast Name: " + lastName + "\nStreet: " + street + "\nCity: " + city
-                + "\nState: " + state + "\nZip Code: " + zipCode + "\nPhone: " + phone + "\nEmail: " + email + "\n";
+                + "\nState: " + state + "\nZip Code: " + zipCode + "\nphoneNumber: " + phoneNumber + "\nEmail: " + email + "\n";
     }
 
     // Getters
@@ -61,8 +61,8 @@ public class AddressEntry {
         return zipCode;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
     public String getEmail() {
@@ -94,8 +94,8 @@ public class AddressEntry {
         this.zipCode = zipCode;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public void setEmail(String email) {

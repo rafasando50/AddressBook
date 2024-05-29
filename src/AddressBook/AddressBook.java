@@ -80,7 +80,7 @@ public class AddressBook {
 
         this.addressEntry = new AddressEntry(addressEntry.getFisrtName(), addressEntry.getLastName(),
                 addressEntry.getStreet(),
-                addressEntry.getCity(), addressEntry.getState(), addressEntry.getZipCode(), addressEntry.getPhone(),
+                addressEntry.getCity(), addressEntry.getState(), addressEntry.getZipCode(), addressEntry.getPhoneNumber(),
                 addressEntry.getEmail());
 
         this.addressEntryList.add(this.addressEntry);
@@ -105,10 +105,10 @@ public class AddressBook {
                         String city = data[3];
                         String state = data[4];
                         int zipCode = Integer.parseInt(data[5]);
-                        String phone = data[6];
+                        String phoneNumber = data[6];
                         String email = data[7];
 
-                        AddressEntry entry = new AddressEntry(firstName, lastName, street, city, state, zipCode, phone,
+                        AddressEntry entry = new AddressEntry(firstName, lastName, street, city, state, zipCode, phoneNumber,
                                 email);
                         addressEntryList.add(entry);
                     }
