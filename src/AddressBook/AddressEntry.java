@@ -11,13 +11,12 @@ public class AddressEntry {
     private String phone;
     private String email;
 
-    /* Constructor sin parametros */
+    // Constructor sin parametros
     public AddressEntry() {
 
     }
 
-    /**
-     * Constructor con todos los parametros */
+    // Constructor con todos los parametros
     public AddressEntry(String fisrtName, String lastName, String street, String city, String state, int zipCode,
             String phone, String email) {
         this.fisrtName = fisrtName;
@@ -30,14 +29,14 @@ public class AddressEntry {
         this.email = email;
     }
 
-    /* Metodo toString sobreescrito que devuelve una cadena con todas las entradas */
+    // Metodo toString sobreescrito que devuelve una cadena con todas las entradas
     @Override
     public String toString() {
         return "\nFisrt Name: " + fisrtName + "\nLast Name: " + lastName + "\nStreet: " + street + "\nCity: " + city
                 + "\nState: " + state + "\nZip Code: " + zipCode + "\nPhone: " + phone + "\nEmail: " + email + "\n";
     }
 
-    /* Getters */
+    // Getters
     public String getFisrtName() {
         return fisrtName;
     }
@@ -70,7 +69,7 @@ public class AddressEntry {
         return email;
     }
 
-    /* Setters */
+    // Setters 
     public void setFisrtName(String fisrtName) {
         this.fisrtName = fisrtName;
     }
