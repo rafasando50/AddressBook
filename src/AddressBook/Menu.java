@@ -17,6 +17,7 @@ public class Menu {
     // Muestra el menú en la consola.
     public void displayMenu() {
         System.out.println("=   =   =   =   =   =   =   =   =   =   =   =");
+        System.out.println("\nSelecciona una opcion: ");
         System.out.println("\na) file upload\nb) add\nc) remove\nd) find\ne) show \nf) go out\n");
         System.out.println("=   =   =   =   =   =   =   =   =   =   =   =");
     }
